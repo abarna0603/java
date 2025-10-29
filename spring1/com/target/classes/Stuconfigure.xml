@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+        <bean class="in.Degree" id="d1">  
+    <property name="collegeName">
+    <value>Nelliandavar insitute of technology</value>
+    </property>
+        <property name="degree">
+    <value>B.E</value>
+    </property>
+        <property name="stream">
+    <value>CSE</value>
+    </property>
+     <property name="cgpa">
+    <value>7.91</value>
+    </property>
+    
+    <property name="yop">
+    <value>2024</value> </property>
+    
+    
+    
+    </bean>
+    
+    
+    <bean class="in.Student" id="s1">  
+    <property name="name">
+    <value>Abarna</value>
+    </property>
+        <property name="gender">
+    <value>Female</value>
+    </property>
+        <property name="email">
+    <value>Abarna@123</value>
+    </property>
+        <property name="phone">
+    <value>934875243</value>
+    </property>
+    <property name="degree" ref="d1"></property>
+    
+    
+    
+    </bean>
+</beans>
